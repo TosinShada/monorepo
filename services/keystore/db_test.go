@@ -3,12 +3,12 @@ package keystore
 import (
 	"testing"
 
+	"github.com/TosinShada/monorepo/support/db/dbtest"
 	migrate "github.com/rubenv/sql-migrate"
-	"github.com/stellar/go/support/db/dbtest"
 )
 
-//TODO: creating a DB for every single test is inefficient. Maybe we can
-//improve our dbtest package so that we can just get a transaction.
+// TODO: creating a DB for every single test is inefficient. Maybe we can
+// improve our dbtest package so that we can just get a transaction.
 func openKeystoreDB(t *testing.T) *dbtest.DB {
 	db := dbtest.Postgres(t)
 	migrations := &migrate.FileMigrationSource{

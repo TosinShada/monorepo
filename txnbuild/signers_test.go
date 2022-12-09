@@ -3,12 +3,12 @@ package txnbuild
 import (
 	"testing"
 
-	"github.com/stellar/go/price"
+	"github.com/TosinShada/monorepo/price"
 
-	"github.com/stellar/go/keypair"
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/monorepo/keypair"
+	"github.com/TosinShada/monorepo/xdr"
 
-	"github.com/stellar/go/network"
+	"github.com/TosinShada/monorepo/network"
 	"github.com/stretchr/testify/assert"
 )
 

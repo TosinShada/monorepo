@@ -8,8 +8,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/support/log"
+	"github.com/TosinShada/monorepo/support/errors"
+	"github.com/TosinShada/monorepo/support/log"
 )
 
 type hash []byte

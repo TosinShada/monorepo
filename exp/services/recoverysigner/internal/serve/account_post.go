@@ -3,13 +3,13 @@ package serve
 import (
 	"net/http"
 
-	"github.com/stellar/go/exp/services/recoverysigner/internal/account"
-	"github.com/stellar/go/exp/services/recoverysigner/internal/serve/auth"
-	"github.com/stellar/go/keypair"
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/support/http/httpdecode"
-	supportlog "github.com/stellar/go/support/log"
-	"github.com/stellar/go/support/render/httpjson"
+	"github.com/TosinShada/monorepo/exp/services/recoverysigner/internal/account"
+	"github.com/TosinShada/monorepo/exp/services/recoverysigner/internal/serve/auth"
+	"github.com/TosinShada/monorepo/keypair"
+	"github.com/TosinShada/monorepo/support/errors"
+	"github.com/TosinShada/monorepo/support/http/httpdecode"
+	supportlog "github.com/TosinShada/monorepo/support/log"
+	"github.com/TosinShada/monorepo/support/render/httpjson"
 )
 
 type accountPostHandler struct {

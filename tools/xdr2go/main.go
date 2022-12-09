@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"go/format"
 
+	"github.com/TosinShada/monorepo/support/errors"
+	"github.com/TosinShada/monorepo/xdr"
 	"github.com/spf13/cobra"
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/xdr"
 )
 
 var (

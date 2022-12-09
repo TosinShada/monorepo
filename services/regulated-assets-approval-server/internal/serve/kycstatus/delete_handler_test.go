@@ -5,10 +5,10 @@ import (
 	"net/http"
 	"testing"
 
+	"github.com/TosinShada/monorepo/keypair"
+	"github.com/TosinShada/monorepo/services/regulated-assets-approval-server/internal/db/dbtest"
+	"github.com/TosinShada/monorepo/services/regulated-assets-approval-server/internal/serve/httperror"
 	"github.com/google/uuid"
-	"github.com/stellar/go/keypair"
-	"github.com/stellar/go/services/regulated-assets-approval-server/internal/db/dbtest"
-	"github.com/stellar/go/services/regulated-assets-approval-server/internal/serve/httperror"
 	"github.com/stretchr/testify/require"
 )
 

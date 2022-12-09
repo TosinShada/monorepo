@@ -6,10 +6,10 @@ import (
 	"regexp"
 	"strings"
 
+	"github.com/TosinShada/monorepo/exp/crypto/derivation"
+	"github.com/TosinShada/monorepo/keypair"
+	"github.com/TosinShada/monorepo/support/errors"
 	"github.com/spf13/cobra"
-	"github.com/stellar/go/exp/crypto/derivation"
-	"github.com/stellar/go/keypair"
-	"github.com/stellar/go/support/errors"
 	"github.com/tyler-smith/go-bip39"
 )
 

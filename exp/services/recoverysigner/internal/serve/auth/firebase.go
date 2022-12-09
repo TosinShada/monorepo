@@ -7,9 +7,9 @@ import (
 
 	firebase "firebase.google.com/go"
 	firebaseauth "firebase.google.com/go/auth"
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/support/http/httpauthz"
-	"github.com/stellar/go/support/log"
+	"github.com/TosinShada/monorepo/support/errors"
+	"github.com/TosinShada/monorepo/support/http/httpauthz"
+	"github.com/TosinShada/monorepo/support/log"
 	"google.golang.org/api/option"
 )
 

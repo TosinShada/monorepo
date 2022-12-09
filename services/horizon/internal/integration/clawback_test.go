@@ -5,15 +5,15 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/stellar/go/clients/horizonclient"
-	"github.com/stellar/go/keypair"
-	protocol "github.com/stellar/go/protocols/horizon"
-	"github.com/stellar/go/protocols/horizon/effects"
-	"github.com/stellar/go/protocols/horizon/operations"
-	"github.com/stellar/go/services/horizon/internal/codes"
-	"github.com/stellar/go/services/horizon/internal/test/integration"
-	"github.com/stellar/go/txnbuild"
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/monorepo/clients/horizonclient"
+	"github.com/TosinShada/monorepo/keypair"
+	protocol "github.com/TosinShada/monorepo/protocols/horizon"
+	"github.com/TosinShada/monorepo/protocols/horizon/effects"
+	"github.com/TosinShada/monorepo/protocols/horizon/operations"
+	"github.com/TosinShada/monorepo/services/horizon/internal/codes"
+	"github.com/TosinShada/monorepo/services/horizon/internal/test/integration"
+	"github.com/TosinShada/monorepo/txnbuild"
+	"github.com/TosinShada/monorepo/xdr"
 )
 
 func TestHappyClawbackAccount(t *testing.T) {

@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/TosinShada/monorepo/support/errors"
+	"github.com/TosinShada/monorepo/xdr"
 	"github.com/guregu/null"
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/xdr"
 )
 
 // LedgerBounds represents the ledger bounds of a Stellar transaction

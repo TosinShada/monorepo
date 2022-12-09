@@ -1,4 +1,4 @@
-module github.com/stellar/go
+module github.com/TosinShada/monorepo
 
 go 1.17
 

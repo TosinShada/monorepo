@@ -3,10 +3,10 @@ package cmd
 import (
 	"fmt"
 
+	"github.com/TosinShada/monorepo/clients/horizonclient"
+	demo "github.com/TosinShada/monorepo/txnbuild/cmd/demo/operations"
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
-	"github.com/stellar/go/clients/horizonclient"
-	demo "github.com/stellar/go/txnbuild/cmd/demo/operations"
 )
 
 // initCmd represents the init command

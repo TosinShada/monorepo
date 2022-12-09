@@ -6,7 +6,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/stellar/go/strkey"
+	"github.com/TosinShada/monorepo/strkey"
 )
 
 // This file contains helpers for working with xdr.Asset structs
@@ -92,9 +92,9 @@ func NewCreditAsset(code string, issuer string) (Asset, error) {
 // BuildAsset creates a new asset from a given `assetType`, `code`, and `issuer`.
 //
 // Valid assetTypes are:
-// 		- `native`
-//		- `credit_alphanum4`
-//		- `credit_alphanum12`
+//   - `native`
+//   - `credit_alphanum4`
+//   - `credit_alphanum12`
 func BuildAsset(assetType, issuer, code string) (Asset, error) {
 	t, ok := StringToAssetType[assetType]
 

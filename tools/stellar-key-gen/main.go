@@ -5,8 +5,8 @@ import (
 	"io"
 	"os"
 
+	"github.com/TosinShada/monorepo/keypair"
 	"github.com/spf13/cobra"
-	"github.com/stellar/go/keypair"
 )
 
 func main() {

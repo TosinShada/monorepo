@@ -17,8 +17,8 @@ import (
 	"sync"
 	"time"
 
+	"github.com/TosinShada/monorepo/support/log"
 	"github.com/pkg/errors"
-	"github.com/stellar/go/support/log"
 )
 
 type stellarCoreRunnerInterface interface {
@@ -96,9 +96,9 @@ func newStellarCoreRunner(config CaptiveCoreConfig, mode stellarCoreRunnerMode) 
 		fullStoragePath = path.Join(config.StoragePath, "captive-core-"+createRandomHexString(8))
 	} else {
 		// Use the specified directory to store Captive Core's data:
-		//    https://github.com/stellar/go/issues/3437
+		//    https://github.com/TosinShada/monorepo/issues/3437
 		// but be sure to re-use rather than replace it:
-		//    https://github.com/stellar/go/issues/3631
+		//    https://github.com/TosinShada/monorepo/issues/3631
 		fullStoragePath = path.Join(config.StoragePath, "captive-core")
 	}
 

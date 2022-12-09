@@ -5,10 +5,10 @@ import (
 	"strconv"
 	"time"
 
+	horizonclient "github.com/TosinShada/monorepo/clients/horizonclient"
+	hProtocol "github.com/TosinShada/monorepo/protocols/horizon"
+	"github.com/TosinShada/monorepo/services/ticker/internal/utils"
 	"github.com/pkg/errors"
-	horizonclient "github.com/stellar/go/clients/horizonclient"
-	hProtocol "github.com/stellar/go/protocols/horizon"
-	"github.com/stellar/go/services/ticker/internal/utils"
 )
 
 // fetchOrderbook fetches the orderbook stats for the base and counter assets provided in the parameters
@@ -83,7 +83,7 @@ func calcOrderbookStats(obStats *OrderbookStats, summary hProtocol.OrderBookSumm
 
 		// On Horizon, Ask prices are in units of counter, but
 		// amount is in units of base. Therefore, real amount = amount * price
-		// See: https://github.com/stellar/go/issues/612
+		// See: https://github.com/TosinShada/monorepo/issues/612
 		obStats.AskVolume += pricef * amountf
 		if pricef < obStats.LowestAsk {
 			obStats.LowestAsk = pricef

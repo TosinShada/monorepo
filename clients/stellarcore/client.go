@@ -12,8 +12,8 @@ import (
 	"strings"
 	"time"
 
-	proto "github.com/stellar/go/protocols/stellarcore"
-	"github.com/stellar/go/support/errors"
+	proto "github.com/TosinShada/monorepo/protocols/stellarcore"
+	"github.com/TosinShada/monorepo/support/errors"
 )
 
 // Client represents a client that is capable of communicating with a

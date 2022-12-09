@@ -1,12 +1,12 @@
-//Package transactions offers common infrastructure for testing Transactions
+// Package transactions offers common infrastructure for testing Transactions
 package transactions
 
 import (
 	"encoding/hex"
 	"testing"
 
-	"github.com/stellar/go/ingest"
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/monorepo/ingest"
+	"github.com/TosinShada/monorepo/xdr"
 	"github.com/stretchr/testify/assert"
 )
 

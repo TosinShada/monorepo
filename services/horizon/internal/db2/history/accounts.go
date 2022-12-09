@@ -5,9 +5,9 @@ import (
 
 	sq "github.com/Masterminds/squirrel"
 
-	"github.com/stellar/go/services/horizon/internal/db2"
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/monorepo/services/horizon/internal/db2"
+	"github.com/TosinShada/monorepo/support/errors"
+	"github.com/TosinShada/monorepo/xdr"
 )
 
 // IsAuthRequired returns true if the account has the "AUTH_REQUIRED" option
@@ -225,7 +225,7 @@ func selectUnionBySponsor(tables []string, sponsor string, page db2.PageQuery) (
 		Limit(page.Limit), nil
 }
 
-// AccountsForSponsor return all the accounts where `sponsor`` is sponsoring the account entry or
+// AccountsForSponsor return all the accounts where `sponsor“ is sponsoring the account entry or
 // any of its subentries (trust lines, signers, data, or account entry)
 func (q *Q) AccountsForSponsor(ctx context.Context, sponsor string, page db2.PageQuery) ([]AccountEntry, error) {
 	sql, err := selectUnionBySponsor(

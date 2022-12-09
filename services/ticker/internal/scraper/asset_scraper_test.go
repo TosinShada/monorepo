@@ -7,9 +7,9 @@ import (
 	"net/url"
 	"testing"
 
-	hProtocol "github.com/stellar/go/protocols/horizon"
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/support/log"
+	hProtocol "github.com/TosinShada/monorepo/protocols/horizon"
+	"github.com/TosinShada/monorepo/support/errors"
+	"github.com/TosinShada/monorepo/support/log"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

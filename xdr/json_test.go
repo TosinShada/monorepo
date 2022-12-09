@@ -6,8 +6,8 @@ import (
 	"math"
 	"testing"
 
-	"github.com/stellar/go/gxdr"
-	"github.com/stellar/go/randxdr"
+	"github.com/TosinShada/monorepo/gxdr"
+	"github.com/TosinShada/monorepo/randxdr"
 
 	"github.com/stretchr/testify/assert"
 )

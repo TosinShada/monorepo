@@ -3,7 +3,7 @@ package orderbook
 import (
 	"sort"
 
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/monorepo/xdr"
 )
 
 // edgeSet maintains a mapping of assets to a set of venues, which

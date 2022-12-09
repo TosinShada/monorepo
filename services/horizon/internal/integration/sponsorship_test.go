@@ -8,14 +8,14 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	sdk "github.com/stellar/go/clients/horizonclient"
-	"github.com/stellar/go/keypair"
-	protocol "github.com/stellar/go/protocols/horizon"
-	"github.com/stellar/go/protocols/horizon/effects"
-	"github.com/stellar/go/protocols/horizon/operations"
-	"github.com/stellar/go/services/horizon/internal/test/integration"
-	"github.com/stellar/go/txnbuild"
-	"github.com/stellar/go/xdr"
+	sdk "github.com/TosinShada/monorepo/clients/horizonclient"
+	"github.com/TosinShada/monorepo/keypair"
+	protocol "github.com/TosinShada/monorepo/protocols/horizon"
+	"github.com/TosinShada/monorepo/protocols/horizon/effects"
+	"github.com/TosinShada/monorepo/protocols/horizon/operations"
+	"github.com/TosinShada/monorepo/services/horizon/internal/test/integration"
+	"github.com/TosinShada/monorepo/txnbuild"
+	"github.com/TosinShada/monorepo/xdr"
 )
 
 func TestSponsorships(t *testing.T) {
@@ -385,7 +385,7 @@ func TestSponsorships(t *testing.T) {
 		tt.Condition(preAuthSignerAdded)
 
 		// We don't check effects because we don't process transaction-level changes
-		// See https://github.com/stellar/go/pull/3050#discussion_r493651644
+		// See https://github.com/TosinShada/monorepo/pull/3050#discussion_r493651644
 	})
 
 	// Let's add a sponsored data entry

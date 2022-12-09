@@ -7,9 +7,9 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/support/log"
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/monorepo/support/errors"
+	"github.com/TosinShada/monorepo/support/log"
+	"github.com/TosinShada/monorepo/xdr"
 
 	"github.com/pelletier/go-toml"
 )
@@ -140,8 +140,10 @@ type CaptiveCoreToml struct {
 // path with a placeholder. For example:
 //
 // text := `[QUORUM_SET.a.b.c]
-//         THRESHOLD_PERCENT=67
-//         VALIDATORS=["a","b"]`
+//
+//	THRESHOLD_PERCENT=67
+//	VALIDATORS=["a","b"]`
+//
 // flattenTables(text, []string{"QUORUM_SET"}) ->
 //
 // `[__placeholder_label_0__]

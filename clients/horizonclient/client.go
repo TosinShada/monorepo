@@ -13,15 +13,15 @@ import (
 	"strings"
 	"time"
 
-	"github.com/stellar/go/txnbuild"
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/monorepo/txnbuild"
+	"github.com/TosinShada/monorepo/xdr"
 
 	"github.com/manucorporat/sse"
 
-	hProtocol "github.com/stellar/go/protocols/horizon"
-	"github.com/stellar/go/protocols/horizon/effects"
-	"github.com/stellar/go/protocols/horizon/operations"
-	"github.com/stellar/go/support/errors"
+	hProtocol "github.com/TosinShada/monorepo/protocols/horizon"
+	"github.com/TosinShada/monorepo/protocols/horizon/effects"
+	"github.com/TosinShada/monorepo/protocols/horizon/operations"
+	"github.com/TosinShada/monorepo/support/errors"
 )
 
 // sendRequest builds the URL for the given horizon request and sends the url to a horizon server

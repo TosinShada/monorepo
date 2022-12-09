@@ -3,7 +3,7 @@ package federation
 import (
 	"context"
 
-	"github.com/stellar/go/support/errors"
+	"github.com/TosinShada/monorepo/support/errors"
 )
 
 // LookupReverseRecord implements `ReverseDriver` by performing

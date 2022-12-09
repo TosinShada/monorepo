@@ -6,8 +6,8 @@ import (
 	"sync"
 	"time"
 
+	"github.com/TosinShada/monorepo/support/log"
 	"github.com/go-errors/errors"
-	"github.com/stellar/go/support/log"
 )
 
 // NewDefaultSubmissionList returns a list that manages open submissions purely

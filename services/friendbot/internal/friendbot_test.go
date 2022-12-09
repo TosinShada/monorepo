@@ -4,11 +4,11 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/stellar/go/txnbuild"
+	"github.com/TosinShada/monorepo/txnbuild"
 
-	"github.com/stellar/go/clients/horizonclient"
-	"github.com/stellar/go/keypair"
-	hProtocol "github.com/stellar/go/protocols/horizon"
+	"github.com/TosinShada/monorepo/clients/horizonclient"
+	"github.com/TosinShada/monorepo/keypair"
+	hProtocol "github.com/TosinShada/monorepo/protocols/horizon"
 	"github.com/stretchr/testify/assert"
 )
 

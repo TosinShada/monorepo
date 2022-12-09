@@ -3,11 +3,11 @@ package cmd
 import (
 	"go/types"
 
+	"github.com/TosinShada/monorepo/exp/services/recoverysigner/internal/serve"
+	"github.com/TosinShada/monorepo/network"
+	"github.com/TosinShada/monorepo/support/config"
+	supportlog "github.com/TosinShada/monorepo/support/log"
 	"github.com/spf13/cobra"
-	"github.com/stellar/go/exp/services/recoverysigner/internal/serve"
-	"github.com/stellar/go/network"
-	"github.com/stellar/go/support/config"
-	supportlog "github.com/stellar/go/support/log"
 )
 
 type ServeCommand struct {

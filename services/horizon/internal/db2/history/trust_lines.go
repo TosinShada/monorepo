@@ -4,8 +4,8 @@ import (
 	"context"
 
 	sq "github.com/Masterminds/squirrel"
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/monorepo/support/errors"
+	"github.com/TosinShada/monorepo/xdr"
 )
 
 // IsAuthorized returns true if issuer has authorized account to perform

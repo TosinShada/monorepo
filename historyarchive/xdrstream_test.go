@@ -10,7 +10,7 @@ import (
 	"io"
 	"testing"
 
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/monorepo/xdr"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

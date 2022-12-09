@@ -11,14 +11,14 @@ import (
 	"testing"
 	"time"
 
+	"github.com/TosinShada/monorepo/amount"
+	"github.com/TosinShada/monorepo/keypair"
 	"github.com/guregu/null"
-	"github.com/stellar/go/amount"
-	"github.com/stellar/go/keypair"
 
-	"github.com/stellar/go/protocols/horizon"
-	"github.com/stellar/go/services/horizon/internal/db2/history"
-	stellarTime "github.com/stellar/go/support/time"
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/monorepo/protocols/horizon"
+	"github.com/TosinShada/monorepo/services/horizon/internal/db2/history"
+	stellarTime "github.com/TosinShada/monorepo/support/time"
+	"github.com/TosinShada/monorepo/xdr"
 )
 
 func TestLiquidityPoolTrades(t *testing.T) {
@@ -341,7 +341,7 @@ func unsetAssetQuery(q *url.Values, prefix string) {
 	q.Del(prefix + "asset_issuer")
 }
 
-//testPrice ensures that the price float string is equal to the rational price
+// testPrice ensures that the price float string is equal to the rational price
 func testPrice(t *HTTPT, priceStr string, priceR horizon.TradePrice) {
 	price, err := strconv.ParseFloat(priceStr, 64)
 	if t.Assert.NoError(err) {
@@ -592,7 +592,7 @@ func TestTradeActions_IndexRegressions(t *testing.T) {
 		ht.Assert.Equal(404, w.Code) //This used to be 200 with length 0
 	})
 
-	t.Run("Regression for nil prices: https://github.com/stellar/go/issues/357", func(t *testing.T) {
+	t.Run("Regression for nil prices: https://github.com/TosinShada/monorepo/issues/357", func(t *testing.T) {
 		ht := StartHTTPTestWithoutScenario(t)
 		dbQ := &history.Q{ht.HorizonSession()}
 		history.TradeScenario(ht.T, dbQ)
@@ -609,7 +609,7 @@ func TestTradeActions_IndexRegressions(t *testing.T) {
 
 // TestTradeActions_AggregationOrdering checks that open/close aggregation
 // fields are correct for multiple trades that occur in the same ledger
-// https://github.com/stellar/go/issues/215
+// https://github.com/TosinShada/monorepo/issues/215
 func TestTradeActions_AggregationOrdering(t *testing.T) {
 	ht := StartHTTPTestWithoutScenario(t)
 	defer ht.Finish()
@@ -757,7 +757,7 @@ func TestTradeActions_AggregationOffset(t *testing.T) {
 	}
 }
 
-//GetTestAsset generates an issuer on the fly and creates a CreditAlphanum4 Asset with given code
+// GetTestAsset generates an issuer on the fly and creates a CreditAlphanum4 Asset with given code
 func GetTestAsset(code string) xdr.Asset {
 	var codeBytes [4]byte
 	copy(codeBytes[:], []byte(code))
@@ -765,7 +765,7 @@ func GetTestAsset(code string) xdr.Asset {
 	return xdr.Asset{Type: xdr.AssetTypeAssetTypeCreditAlphanum4, AlphaNum4: &ca4, AlphaNum12: nil}
 }
 
-//Get generates and returns an account on the fly
+// Get generates and returns an account on the fly
 func GetTestAccount() xdr.AccountId {
 	var key xdr.Uint256
 	kp, _ := keypair.Random()
@@ -781,7 +781,7 @@ func abs(a xdr.Int32) xdr.Int32 {
 	return a
 }
 
-//IngestTestTrade mock ingests a trade
+// IngestTestTrade mock ingests a trade
 func IngestTestTrade(
 	q *history.Q,
 	assetSold xdr.Asset,
@@ -852,7 +852,7 @@ func IngestTestTrade(
 	return nil
 }
 
-//PopulateTestTrades generates and ingests trades between two assets according to given parameters
+// PopulateTestTrades generates and ingests trades between two assets according to given parameters
 func PopulateTestTrades(
 	q *history.Q,
 	startTs int64,

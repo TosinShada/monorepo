@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/stellar/go/protocols/horizon/operations"
-	"github.com/stellar/go/support/errors"
+	"github.com/TosinShada/monorepo/protocols/horizon/operations"
+	"github.com/TosinShada/monorepo/support/errors"
 )
 
 // BuildURL creates the endpoint to be queried based on the data in the OperationRequest struct.

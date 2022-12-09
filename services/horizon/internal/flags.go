@@ -12,13 +12,13 @@ import (
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/viper"
 
-	"github.com/stellar/go/ingest/ledgerbackend"
-	"github.com/stellar/go/network"
-	"github.com/stellar/go/services/horizon/internal/db2/schema"
-	apkg "github.com/stellar/go/support/app"
-	support "github.com/stellar/go/support/config"
-	"github.com/stellar/go/support/db"
-	"github.com/stellar/go/support/log"
+	"github.com/TosinShada/monorepo/ingest/ledgerbackend"
+	"github.com/TosinShada/monorepo/network"
+	"github.com/TosinShada/monorepo/services/horizon/internal/db2/schema"
+	apkg "github.com/TosinShada/monorepo/support/app"
+	support "github.com/TosinShada/monorepo/support/config"
+	"github.com/TosinShada/monorepo/support/db"
+	"github.com/TosinShada/monorepo/support/log"
 	"github.com/stellar/throttled"
 )
 
@@ -78,7 +78,7 @@ func checkMigrations(config Config) error {
 		return fmt.Errorf(
 			`There are %v migrations to apply in the "up" direction.
 The necessary migrations are: %v
-A database migration is required to run this version (%v) of Horizon. Run "horizon db migrate up" to update your DB. Consult the Changelog (https://github.com/stellar/go/blob/master/services/horizon/CHANGELOG.md) for more information.`,
+A database migration is required to run this version (%v) of Horizon. Run "horizon db migrate up" to update your DB. Consult the Changelog (https://github.com/TosinShada/monorepo/blob/master/services/horizon/CHANGELOG.md) for more information.`,
 			len(migrationsToApplyUp),
 			migrationsToApplyUp,
 			apkg.Version(),
@@ -88,7 +88,7 @@ A database migration is required to run this version (%v) of Horizon. Run "horiz
 	nMigrationsDown := schema.GetNumMigrationsDown(config.DatabaseURL)
 	if nMigrationsDown > 0 {
 		return fmt.Errorf(
-			`A database migration DOWN to an earlier version of the schema is required to run this version (%v) of Horizon. Consult the Changelog (https://github.com/stellar/go/blob/master/services/horizon/CHANGELOG.md) for more information.
+			`A database migration DOWN to an earlier version of the schema is required to run this version (%v) of Horizon. Consult the Changelog (https://github.com/TosinShada/monorepo/blob/master/services/horizon/CHANGELOG.md) for more information.
 In order to migrate the database DOWN, using the HIGHEST version number of Horizon you have installed (not this binary), run "horizon db migrate down %v".`,
 			apkg.Version(),
 			nMigrationsDown,

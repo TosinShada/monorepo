@@ -3,8 +3,8 @@ package txnbuild
 import (
 	"fmt"
 
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/monorepo/support/errors"
+	"github.com/TosinShada/monorepo/xdr"
 )
 
 // MemoText is used to send human messages of up to 28 bytes of ASCII/UTF-8.

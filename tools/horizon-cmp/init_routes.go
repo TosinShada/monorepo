@@ -1,7 +1,7 @@
 package main
 
 import (
-	cmp "github.com/stellar/go/tools/horizon-cmp/internal"
+	cmp "github.com/TosinShada/monorepo/tools/horizon-cmp/internal"
 )
 
 var routes = cmp.Routes{

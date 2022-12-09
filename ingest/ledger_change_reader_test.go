@@ -8,9 +8,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/stellar/go/ingest/ledgerbackend"
-	"github.com/stellar/go/network"
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/monorepo/ingest/ledgerbackend"
+	"github.com/TosinShada/monorepo/network"
+	"github.com/TosinShada/monorepo/xdr"
 )
 
 const (

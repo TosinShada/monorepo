@@ -12,15 +12,15 @@ import (
 
 	"github.com/prometheus/client_golang/prometheus"
 
-	"github.com/stellar/go/clients/stellarcore"
-	"github.com/stellar/go/historyarchive"
-	"github.com/stellar/go/ingest"
-	"github.com/stellar/go/ingest/ledgerbackend"
-	"github.com/stellar/go/services/horizon/internal/db2/history"
-	"github.com/stellar/go/services/horizon/internal/ingest/filters"
-	"github.com/stellar/go/support/db"
-	"github.com/stellar/go/support/errors"
-	logpkg "github.com/stellar/go/support/log"
+	"github.com/TosinShada/monorepo/clients/stellarcore"
+	"github.com/TosinShada/monorepo/historyarchive"
+	"github.com/TosinShada/monorepo/ingest"
+	"github.com/TosinShada/monorepo/ingest/ledgerbackend"
+	"github.com/TosinShada/monorepo/services/horizon/internal/db2/history"
+	"github.com/TosinShada/monorepo/services/horizon/internal/ingest/filters"
+	"github.com/TosinShada/monorepo/support/db"
+	"github.com/TosinShada/monorepo/support/errors"
+	logpkg "github.com/TosinShada/monorepo/support/log"
 )
 
 const (
@@ -472,14 +472,15 @@ func (s *system) RegisterMetrics(registry *prometheus.Registry) {
 // Finally, 1a and 1b are tricky because we need to keep the latest version
 // of order book graph in memory of each Horizon instance. To solve this:
 // * For state init:
-//   * If instance is a leader, we update the order book graph by running state
+//   - If instance is a leader, we update the order book graph by running state
 //     pipeline normally.
-//   * If instance is NOT a leader, we build a graph from offers present in a
+//   - If instance is NOT a leader, we build a graph from offers present in a
 //     database. We completely omit state pipeline in this case.
+//
 // * For resuming:
-//   * If instances is a leader, it runs full ledger pipeline, including updating
+//   - If instances is a leader, it runs full ledger pipeline, including updating
 //     a database.
-//   * If instances is a NOT leader, it runs ledger pipeline without updating a
+//   - If instances is a NOT leader, it runs ledger pipeline without updating a
 //     a database so order book graph is updated but database is not overwritten.
 func (s *system) Run() {
 	s.runStateMachine(startState{})

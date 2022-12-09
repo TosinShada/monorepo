@@ -7,11 +7,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/stellar/go/keypair"
-	"github.com/stellar/go/network"
-	"github.com/stellar/go/price"
-	"github.com/stellar/go/strkey"
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/monorepo/keypair"
+	"github.com/TosinShada/monorepo/network"
+	"github.com/TosinShada/monorepo/price"
+	"github.com/TosinShada/monorepo/strkey"
+	"github.com/TosinShada/monorepo/xdr"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

@@ -7,7 +7,7 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/stellar/go/services/ticker/internal/utils"
+	"github.com/TosinShada/monorepo/services/ticker/internal/utils"
 )
 
 // getDBFieldTags returns all "db" tags for a given struct, optionally excluding the "id".

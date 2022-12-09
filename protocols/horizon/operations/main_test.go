@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/monorepo/xdr"
 )
 
 func TestTypeNamesAllCovered(t *testing.T) {

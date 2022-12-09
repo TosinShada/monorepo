@@ -3,7 +3,7 @@ package horizonclient
 import (
 	"testing"
 
-	"github.com/stellar/go/support/http/httptest"
+	"github.com/TosinShada/monorepo/support/http/httptest"
 	"github.com/stretchr/testify/assert"
 )
 

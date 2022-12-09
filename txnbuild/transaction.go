@@ -3,9 +3,9 @@ Package txnbuild implements transactions and operations on the Stellar network.
 This library provides an interface to the Stellar transaction model. It supports the building of Go applications on
 top of the Stellar network (https://www.stellar.org/). Transactions constructed by this library may be submitted
 to any Horizon instance for processing onto the ledger, using any Stellar SDK client. The recommended client for Go
-programmers is horizonclient (https://github.com/stellar/go/tree/master/clients/horizonclient). Together, these two
+programmers is horizonclient (https://github.com/TosinShada/monorepo/tree/master/clients/horizonclient). Together, these two
 libraries provide a complete Stellar SDK.
-For more information and further examples, see https://github.com/stellar/go/blob/master/docs/reference/readme.md
+For more information and further examples, see https://github.com/TosinShada/monorepo/blob/master/docs/reference/readme.md
 */
 package txnbuild
 
@@ -21,11 +21,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/stellar/go/keypair"
-	"github.com/stellar/go/network"
-	"github.com/stellar/go/strkey"
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/monorepo/keypair"
+	"github.com/TosinShada/monorepo/network"
+	"github.com/TosinShada/monorepo/strkey"
+	"github.com/TosinShada/monorepo/support/errors"
+	"github.com/TosinShada/monorepo/xdr"
 )
 
 // MinBaseFee is the minimum transaction fee for the Stellar network of 100 stroops (0.00001 XLM).
@@ -1236,11 +1236,11 @@ func ReadChallengeTx(challengeTx, serverAccountID, network, webAuthDomain string
 // provided. If it does not match the function will return an error.
 //
 // Errors will be raised if:
-//  - The transaction is invalid according to ReadChallengeTx.
-//  - No client signatures are found on the transaction.
-//  - One or more signatures in the transaction are not identifiable as the
-//    server account or one of the signers provided in the arguments.
-//  - The signatures are all valid but do not meet the threshold.
+//   - The transaction is invalid according to ReadChallengeTx.
+//   - No client signatures are found on the transaction.
+//   - One or more signatures in the transaction are not identifiable as the
+//     server account or one of the signers provided in the arguments.
+//   - The signatures are all valid but do not meet the threshold.
 func VerifyChallengeTxThreshold(challengeTx, serverAccountID, network, webAuthDomain string, homeDomains []string, threshold Threshold, signerSummary SignerSummary) (signersFound []string, err error) {
 	signers := make([]string, 0, len(signerSummary))
 	for s := range signerSummary {
@@ -1282,10 +1282,10 @@ func VerifyChallengeTxThreshold(challengeTx, serverAccountID, network, webAuthDo
 // provided. If it does not match the function will return an error.
 //
 // Errors will be raised if:
-//  - The transaction is invalid according to ReadChallengeTx.
-//  - No client signatures are found on the transaction.
-//  - One or more signatures in the transaction are not identifiable as the
-//    server account or one of the signers provided in the arguments.
+//   - The transaction is invalid according to ReadChallengeTx.
+//   - No client signatures are found on the transaction.
+//   - One or more signatures in the transaction are not identifiable as the
+//     server account or one of the signers provided in the arguments.
 func VerifyChallengeTxSigners(challengeTx, serverAccountID, network, webAuthDomain string, homeDomains []string, signers ...string) ([]string, error) {
 	// Read the transaction which validates its structure.
 	tx, _, _, err := ReadChallengeTx(challengeTx, serverAccountID, network, webAuthDomain, homeDomains)

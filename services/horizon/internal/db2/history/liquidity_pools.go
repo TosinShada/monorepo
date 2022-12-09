@@ -8,11 +8,11 @@ import (
 	"strings"
 
 	sq "github.com/Masterminds/squirrel"
+	"github.com/TosinShada/monorepo/services/horizon/internal/db2"
+	"github.com/TosinShada/monorepo/support/errors"
+	"github.com/TosinShada/monorepo/xdr"
 	"github.com/guregu/null"
 	"github.com/jmoiron/sqlx"
-	"github.com/stellar/go/services/horizon/internal/db2"
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/xdr"
 )
 
 // LiquidityPoolsQuery is a helper struct to configure queries to liquidity pools

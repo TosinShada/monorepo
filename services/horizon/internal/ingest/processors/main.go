@@ -1,9 +1,9 @@
 package processors
 
 import (
+	logpkg "github.com/TosinShada/monorepo/support/log"
+	"github.com/TosinShada/monorepo/xdr"
 	"github.com/guregu/null"
-	logpkg "github.com/stellar/go/support/log"
-	"github.com/stellar/go/xdr"
 )
 
 var log = logpkg.DefaultLogger.WithField("service", "ingest")

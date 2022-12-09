@@ -5,12 +5,12 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/stellar/go/clients/horizonclient"
-	"github.com/stellar/go/keypair"
-	"github.com/stellar/go/services/friendbot/internal"
-	"github.com/stellar/go/strkey"
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/txnbuild"
+	"github.com/TosinShada/monorepo/clients/horizonclient"
+	"github.com/TosinShada/monorepo/keypair"
+	"github.com/TosinShada/monorepo/services/friendbot/internal"
+	"github.com/TosinShada/monorepo/strkey"
+	"github.com/TosinShada/monorepo/support/errors"
+	"github.com/TosinShada/monorepo/txnbuild"
 )
 
 func initFriendbot(

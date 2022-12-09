@@ -16,10 +16,10 @@ package main
 import (
 	"log"
 
-	"github.com/stellar/go/clients/horizonclient"
-	"github.com/stellar/go/keypair"
-	"github.com/stellar/go/network"
-	"github.com/stellar/go/txnbuild"
+	"github.com/TosinShada/monorepo/clients/horizonclient"
+	"github.com/TosinShada/monorepo/keypair"
+	"github.com/TosinShada/monorepo/network"
+	"github.com/TosinShada/monorepo/txnbuild"
 )
 
 func main() {

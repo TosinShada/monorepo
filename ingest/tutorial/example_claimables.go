@@ -6,9 +6,9 @@ import (
 	"io"
 	"time"
 
-	"github.com/stellar/go/historyarchive"
-	"github.com/stellar/go/ingest"
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/monorepo/historyarchive"
+	"github.com/TosinShada/monorepo/ingest"
+	"github.com/TosinShada/monorepo/xdr"
 )
 
 func claimables() {

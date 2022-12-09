@@ -3,10 +3,10 @@ package horizonclient
 import (
 	"context"
 
-	hProtocol "github.com/stellar/go/protocols/horizon"
-	"github.com/stellar/go/protocols/horizon/effects"
-	"github.com/stellar/go/protocols/horizon/operations"
-	"github.com/stellar/go/txnbuild"
+	hProtocol "github.com/TosinShada/monorepo/protocols/horizon"
+	"github.com/TosinShada/monorepo/protocols/horizon/effects"
+	"github.com/TosinShada/monorepo/protocols/horizon/operations"
+	"github.com/TosinShada/monorepo/txnbuild"
 	"github.com/stretchr/testify/mock"
 )
 

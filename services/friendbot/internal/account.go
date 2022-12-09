@@ -3,8 +3,8 @@ package internal
 import (
 	"strconv"
 
-	"github.com/stellar/go/clients/horizonclient"
-	"github.com/stellar/go/support/errors"
+	"github.com/TosinShada/monorepo/clients/horizonclient"
+	"github.com/TosinShada/monorepo/support/errors"
 )
 
 // Account implements the `txnbuild.Account` interface.

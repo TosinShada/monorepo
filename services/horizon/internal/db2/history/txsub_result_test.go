@@ -8,11 +8,11 @@ import (
 	"time"
 
 	sq "github.com/Masterminds/squirrel"
+	"github.com/TosinShada/monorepo/ingest"
+	"github.com/TosinShada/monorepo/services/horizon/internal/test"
+	"github.com/TosinShada/monorepo/support/db"
+	"github.com/TosinShada/monorepo/xdr"
 	"github.com/guregu/null"
-	"github.com/stellar/go/ingest"
-	"github.com/stellar/go/services/horizon/internal/test"
-	"github.com/stellar/go/support/db"
-	"github.com/stellar/go/xdr"
 )
 
 func TestInitIdempotent(t *testing.T) {

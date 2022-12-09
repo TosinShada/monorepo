@@ -12,12 +12,12 @@ import (
 	"sync"
 	"time"
 
+	client "github.com/TosinShada/monorepo/clients/horizonclient"
+	protocol "github.com/TosinShada/monorepo/protocols/horizon"
+	"github.com/TosinShada/monorepo/support/errors"
+	slog "github.com/TosinShada/monorepo/support/log"
+	cmp "github.com/TosinShada/monorepo/tools/horizon-cmp/internal"
 	"github.com/spf13/cobra"
-	client "github.com/stellar/go/clients/horizonclient"
-	protocol "github.com/stellar/go/protocols/horizon"
-	"github.com/stellar/go/support/errors"
-	slog "github.com/stellar/go/support/log"
-	cmp "github.com/stellar/go/tools/horizon-cmp/internal"
 )
 
 // maxLevels defines the maximum number of levels deep the crawler

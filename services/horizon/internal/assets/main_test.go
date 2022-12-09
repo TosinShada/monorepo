@@ -3,8 +3,8 @@ package assets
 import (
 	"testing"
 
+	"github.com/TosinShada/monorepo/xdr"
 	"github.com/go-errors/errors"
-	"github.com/stellar/go/xdr"
 	"github.com/stretchr/testify/assert"
 )
 

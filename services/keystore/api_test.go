@@ -12,8 +12,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/support/render/httpjson"
+	"github.com/TosinShada/monorepo/support/errors"
+	"github.com/TosinShada/monorepo/support/render/httpjson"
 )
 
 func TestPutKeysAPI(t *testing.T) {

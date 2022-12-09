@@ -3,8 +3,8 @@ package resourceadapter
 import (
 	"context"
 
-	protocol "github.com/stellar/go/protocols/horizon"
-	"github.com/stellar/go/services/horizon/internal/txsub"
+	protocol "github.com/TosinShada/monorepo/protocols/horizon"
+	"github.com/TosinShada/monorepo/services/horizon/internal/txsub"
 )
 
 // Populate fills out the details

@@ -8,16 +8,16 @@ import (
 	"bufio"
 	"flag"
 	"fmt"
-	"github.com/stellar/go/keypair"
-	"github.com/stellar/go/network"
+	"github.com/TosinShada/monorepo/keypair"
+	"github.com/TosinShada/monorepo/network"
 	"io/ioutil"
 	"log"
 	"os"
 	"strings"
 
+	"github.com/TosinShada/monorepo/txnbuild"
+	"github.com/TosinShada/monorepo/xdr"
 	"github.com/howeyc/gopass"
-	"github.com/stellar/go/txnbuild"
-	"github.com/stellar/go/xdr"
 )
 
 var in *bufio.Reader

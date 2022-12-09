@@ -6,8 +6,8 @@ import (
 
 	"github.com/guregu/null"
 
-	"github.com/stellar/go/support/db"
-	"github.com/stellar/go/support/errors"
+	"github.com/TosinShada/monorepo/support/db"
+	"github.com/TosinShada/monorepo/support/errors"
 )
 
 // TradeType is an enum which indicates the type of trade

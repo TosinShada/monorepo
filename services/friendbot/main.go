@@ -6,15 +6,15 @@ import (
 	stdhttp "net/http"
 	"os"
 
+	"github.com/TosinShada/monorepo/services/friendbot/internal"
+	"github.com/TosinShada/monorepo/support/app"
+	"github.com/TosinShada/monorepo/support/config"
+	"github.com/TosinShada/monorepo/support/errors"
+	"github.com/TosinShada/monorepo/support/http"
+	"github.com/TosinShada/monorepo/support/log"
+	"github.com/TosinShada/monorepo/support/render/problem"
 	"github.com/go-chi/chi"
 	"github.com/spf13/cobra"
-	"github.com/stellar/go/services/friendbot/internal"
-	"github.com/stellar/go/support/app"
-	"github.com/stellar/go/support/config"
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/support/http"
-	"github.com/stellar/go/support/log"
-	"github.com/stellar/go/support/render/problem"
 )
 
 // Config represents the configuration of a friendbot server

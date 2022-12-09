@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/stellar/go/services/horizon/internal/test"
-	"github.com/stellar/go/support/errors"
+	"github.com/TosinShada/monorepo/services/horizon/internal/test"
+	"github.com/TosinShada/monorepo/support/errors"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/suite"
 )
@@ -137,7 +137,7 @@ func (suite *SubmissionListTestSuite) TestSubmissionList_Clean() {
 	}
 }
 
-//Tests that Pending works as expected
+// Tests that Pending works as expected
 func (suite *SubmissionListTestSuite) TestSubmissionList_Pending() {
 	assert.Equal(suite.T(), 0, len(suite.list.Pending(suite.ctx)))
 	suite.list.Add(suite.ctx, suite.hashes[0], suite.listeners[0])

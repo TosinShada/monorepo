@@ -15,7 +15,7 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/monorepo/xdr"
 )
 
 // Transaction sets are sorted in two different orders: one for hashing and

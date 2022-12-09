@@ -5,12 +5,12 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/TosinShada/monorepo/services/regulated-assets-approval-server/internal/db"
+	"github.com/TosinShada/monorepo/services/regulated-assets-approval-server/internal/db/dbmigrate"
+	"github.com/TosinShada/monorepo/support/config"
+	"github.com/TosinShada/monorepo/support/log"
 	migrate "github.com/rubenv/sql-migrate"
 	"github.com/spf13/cobra"
-	"github.com/stellar/go/services/regulated-assets-approval-server/internal/db"
-	"github.com/stellar/go/services/regulated-assets-approval-server/internal/db/dbmigrate"
-	"github.com/stellar/go/support/config"
-	"github.com/stellar/go/support/log"
 )
 
 type MigrateCommand struct {

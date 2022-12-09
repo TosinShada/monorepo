@@ -7,8 +7,8 @@ import (
 	"io"
 	"log"
 
-	"github.com/stellar/go/historyarchive"
-	"github.com/stellar/go/ingest"
+	"github.com/TosinShada/monorepo/historyarchive"
+	"github.com/TosinShada/monorepo/ingest"
 )
 
 func main() {

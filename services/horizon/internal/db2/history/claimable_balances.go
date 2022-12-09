@@ -8,10 +8,10 @@ import (
 	"strings"
 
 	sq "github.com/Masterminds/squirrel"
+	"github.com/TosinShada/monorepo/services/horizon/internal/db2"
+	"github.com/TosinShada/monorepo/support/errors"
+	"github.com/TosinShada/monorepo/xdr"
 	"github.com/guregu/null"
-	"github.com/stellar/go/services/horizon/internal/db2"
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/xdr"
 )
 
 // ClaimableBalancesQuery is a helper struct to configure queries to claimable balances

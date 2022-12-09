@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 	"strings"
 
-	hProtocol "github.com/stellar/go/protocols/horizon"
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/xdr"
+	hProtocol "github.com/TosinShada/monorepo/protocols/horizon"
+	"github.com/TosinShada/monorepo/support/errors"
+	"github.com/TosinShada/monorepo/xdr"
 )
 
 func (herr Error) Error() string {

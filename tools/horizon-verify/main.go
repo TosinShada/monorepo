@@ -6,10 +6,10 @@ import (
 	"os"
 	"sync"
 
+	"github.com/TosinShada/monorepo/clients/horizonclient"
+	protocol "github.com/TosinShada/monorepo/protocols/horizon"
+	"github.com/TosinShada/monorepo/xdr"
 	"github.com/spf13/cobra"
-	"github.com/stellar/go/clients/horizonclient"
-	protocol "github.com/stellar/go/protocols/horizon"
-	"github.com/stellar/go/xdr"
 )
 
 var horizonURL string

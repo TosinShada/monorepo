@@ -8,11 +8,11 @@ import (
 	"strconv"
 	"time"
 
-	horizonclient "github.com/stellar/go/clients/horizonclient"
-	hProtocol "github.com/stellar/go/protocols/horizon"
-	"github.com/stellar/go/services/ticker/internal/scraper"
-	"github.com/stellar/go/services/ticker/internal/tickerdb"
-	hlog "github.com/stellar/go/support/log"
+	horizonclient "github.com/TosinShada/monorepo/clients/horizonclient"
+	hProtocol "github.com/TosinShada/monorepo/protocols/horizon"
+	"github.com/TosinShada/monorepo/services/ticker/internal/scraper"
+	"github.com/TosinShada/monorepo/services/ticker/internal/tickerdb"
+	hlog "github.com/TosinShada/monorepo/support/log"
 )
 
 // StreamTrades constantly streams and ingests new trades directly from horizon.

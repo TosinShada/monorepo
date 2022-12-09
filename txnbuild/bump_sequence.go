@@ -1,8 +1,8 @@
 package txnbuild
 
 import (
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/monorepo/support/errors"
+	"github.com/TosinShada/monorepo/xdr"
 )
 
 // BumpSequence represents the Stellar bump sequence operation. See

@@ -3,10 +3,10 @@ package ingest
 import (
 	"context"
 
-	"github.com/stellar/go/historyarchive"
-	"github.com/stellar/go/ingest"
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/monorepo/historyarchive"
+	"github.com/TosinShada/monorepo/ingest"
+	"github.com/TosinShada/monorepo/support/errors"
+	"github.com/TosinShada/monorepo/xdr"
 )
 
 // historyArchiveAdapter is an adapter for the historyarchive package to read from history archives

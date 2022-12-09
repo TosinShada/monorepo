@@ -6,9 +6,9 @@ import (
 	"math"
 	"strings"
 
+	"github.com/TosinShada/monorepo/support/errors"
+	"github.com/TosinShada/monorepo/xdr"
 	"github.com/guregu/null"
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/xdr"
 )
 
 // TimeBounds represents the time bounds of a Stellar transaction

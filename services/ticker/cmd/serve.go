@@ -1,10 +1,10 @@
 package cmd
 
 import (
+	ticker "github.com/TosinShada/monorepo/services/ticker/internal"
+	"github.com/TosinShada/monorepo/services/ticker/internal/tickerdb"
 	"github.com/lib/pq"
 	"github.com/spf13/cobra"
-	ticker "github.com/stellar/go/services/ticker/internal"
-	"github.com/stellar/go/services/ticker/internal/tickerdb"
 )
 
 var ServerAddr string

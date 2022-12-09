@@ -5,12 +5,12 @@ import (
 	"strconv"
 	"strings"
 
+	dbpkg "github.com/TosinShada/monorepo/exp/services/recoverysigner/internal/db"
+	"github.com/TosinShada/monorepo/exp/services/recoverysigner/internal/db/dbmigrate"
+	"github.com/TosinShada/monorepo/support/config"
+	supportlog "github.com/TosinShada/monorepo/support/log"
 	migrate "github.com/rubenv/sql-migrate"
 	"github.com/spf13/cobra"
-	dbpkg "github.com/stellar/go/exp/services/recoverysigner/internal/db"
-	"github.com/stellar/go/exp/services/recoverysigner/internal/db/dbmigrate"
-	"github.com/stellar/go/support/config"
-	supportlog "github.com/stellar/go/support/log"
 )
 
 type DBCommand struct {
