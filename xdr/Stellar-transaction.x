@@ -553,7 +553,10 @@ enum MemoType
     MEMO_TEXT = 1,
     MEMO_ID = 2,
     MEMO_HASH = 3,
-    MEMO_RETURN = 4
+    MEMO_RETURN = 4,
+    MEMO_TEXT_1024B = 110,
+    MEMO_TEXT_2048B = 120,
+    MEMO_TEXT_4096B = 130
 };
 
 union Memo switch (MemoType type)
@@ -568,6 +571,12 @@ case MEMO_HASH:
     Hash hash; // the hash of what to pull from the content server
 case MEMO_RETURN:
     Hash retHash; // the hash of the tx you are rejecting
+case MEMO_TEXT_1024B:
+    string text1024<1024>;
+case MEMO_TEXT_2048B:
+    string text2048<2048>;
+case MEMO_TEXT_4096B:
+    string text4096<4096>;
 };
 
 struct TimeBounds
